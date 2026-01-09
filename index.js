@@ -30,8 +30,16 @@ function increment3guest(){
 function restart(){
     counthome=0
     countguest=0
-     CountEl2.textContent=countguest;
-     CountEl1.textContent=counthome;
+    CountEl2.textContent=countguest;
+    CountEl1.textContent=counthome;
 
 }
+function penalty(){
+    counthome-=1
+    countguest-=1
+    CountEl2.textContent=countguest;
+    CountEl1.textContent=counthome;  
+
+}
+
 

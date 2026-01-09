@@ -6,7 +6,6 @@
 <body>
 
 <div class="main">
-
     <div class="container">
         
         <div class="guest">
@@ -14,9 +13,14 @@
                 <h3>HOME</h3>
                 <h1 id="count-home">0</h1>
             </div>
-            <button onclick="increment1home()">+1</button>
-            <button onclick="increment2home()">+2</button>
-            <button onclick="increment3home()">+3</button>
+            <div class="button">
+                <button onclick="increment1home()" class="indside">+1</button>
+                <button onclick="increment2home()" class="indside">+2</button>
+                <button onclick="increment3home()" class="indside">+3</button>
+            </div>
+            <div>
+                <button class="neg" onclick="penalty()">-1</button>
+            </div>
         </div>
 
         <div class="hello-box">
@@ -28,13 +32,21 @@
                 <h3>GUEST</h3>
                 <h1 id="count-guest">0</h1>
             </div>
-            <button onclick="increment1guest()">+1</button>
-            <button onclick="increment2guest()">+2</button>
-            <button onclick="increment3guest()">+3</button>
+            <div class="button">
+                <button onclick="increment1guest()" class="indside">+1</button>
+                <button onclick="increment2guest()" class="indside">+2</button>
+                <button onclick="increment3guest()" class="indside">+3</button>
+            </div>
+            <button class="neg" onclick="negative()">-1</button>
         </div>
 
     </div>
+</div>
 
+<div class="info">
+    <a href="./information.txt" target="_blank">
+        Information
+    </a>
 </div>
 
 <script src="index.js"></script>
